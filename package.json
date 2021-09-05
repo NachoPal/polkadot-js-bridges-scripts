@@ -1,0 +1,17 @@
+{
+  "name": "polkadot-js-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "send-balance-rococo-to-wococo": "node ./src/moving-walls/set-order.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "@polkadot/api": "2.10.1",
+    "@polkadot/keyring": "4.2.1",
+    "@polkadot/util-crypto": "4.2.1"
+  }
+}
