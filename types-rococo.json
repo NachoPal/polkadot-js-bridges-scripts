@@ -3,12 +3,34 @@
   "RococoBalance": "u128",
   "RococoBlockHash": "H256",
   "RococoBlockNumber": "u32",
-  "RococoHeader": "Header",
+  "RococoHeader": {
+    "parent_Hash": "RococoBlockHash",
+    "number": "Compact<RococoBlockNumber>",
+    "state_root": "RococoBlockHash",
+    "extrinsics_root": "RococoBlockHash",
+    "digest": "RococoDigest"
+  },
+  "RococoDigest": {
+    "logs": "Vec<RococoDigestItem>"
+  },
+  "RococoDigestItem": {
+    "_enum": {
+      "Other": "Vec<u8>",
+      "AuthoritiesChange": "Vec<AuthorityId>",
+      "ChangesTrieRoot": "RococoBlockHash",
+      "SealV0": "SealV0",
+      "Consensus": "Consensus",
+      "Seal": "Seal",
+      "PreRuntime": "PreRuntime"
+    }
+  },
   "--2": "Wococo Types",
   "WococoBalance": "RococoBalance",
   "WococoBlockHash": "RococoBlockHash",
   "WococoBlockNumber": "RococoBlockNumber",
   "WococoHeader": "RococoHeader",
+  "WococoDigest": "RococoDigest",
+  "WococoDigestItem": "RococoDigestItem",
   "--3": "Common types",
   "Address": "AccountId",
   "LookupSource": "AccountId",
