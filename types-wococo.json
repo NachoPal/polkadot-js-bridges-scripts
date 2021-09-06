@@ -10,8 +10,8 @@
   "WococoBlockNumber": "RococoBlockNumber",
   "WococoHeader": "RococoHeader",
   "--3": "Common types",
-  "Address": "MultiAddress",
-  "LookupSource": "MultiAddress",
+  "Address": "AccountId",
+  "LookupSource": "AccountId",
   "AccountSigner": "MultiSigner",
   "SpecVersion": "u32",
   "RelayerId": "AccountId",
@@ -132,16 +132,17 @@
     "commit": "Commit",
     "votes_ancestries": "Vec<BridgedHeader>"
   },
-  "Fee": "RococoBalance",
-  "Balance": "RococoBalance",
-  "BlockHash": "RococoBlockHash",
-  "BlockNumber": "RococoBlockNumber",
-  "BridgedBlockHash": "WococoBlockHash",
-  "BridgedBlockNumber": "WococoBlockNumber",
-  "BridgedHeader": "WococoHeader",
+  "Fee": "WococoBalance",
+  "Balance": "WococoBalance",
+  "Hash": "WococoBlockHash",
+  "BlockHash": "WococoBlockHash",
+  "BlockNumber": "WococoBlockNumber",
+  "BridgedBlockHash": "RococoBlockHash",
+  "BridgedBlockNumber": "RococoBlockNumber",
+  "BridgedHeader": "RococoHeader",
   "Parameter": {
     "_enum": {
-      "RococoToWococoConversionRate": "u128"
+      "WococoToRococoConversionRate": "u128"
     }
   }
 }
