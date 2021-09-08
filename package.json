@@ -1,17 +1,16 @@
 {
-  "name": "polkadot-js-scripts",
+  "name": "polkadot-js-bridges-scripts",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "send-balance-rococo-to-wococo": "node ./src/moving-walls/set-order.js"
+    "send-tcx-rococo-to-wococo": "node ./src/send-tx-rococo-to-wococo.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
-    "@polkadot/api": "2.10.1",
-    "@polkadot/keyring": "4.2.1",
-    "@polkadot/util-crypto": "4.2.1"
+    "@polkadot/api": "5.8.3",
+    "@polkadot/keyring": "7.3.1",
+    "@polkadot/util-crypto": "7.3.1"
   }
-}
